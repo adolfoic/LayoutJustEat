@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adolfo.layoutjusteat.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_cabecera"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="#D3D3D3"
+        >
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp" />
+        />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:src="@drawable/logojusteat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp" />
+
+        <TextView
+            android:id="@+id/tv_codPost"
+            android:text="28027"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_tipoRes"
+            android:text="Todos los tipos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:textSize="18dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_numRes"
+            android:text="80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_listadores"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        tools:listitem="@layout/celda"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_pie"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3"
+        >
+
+        <TextView
+            android:id="@+id/tv_tipocomida"
+            android:text="TIPO DE COMIDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_ordenar"
+            android:text="ORDENAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
